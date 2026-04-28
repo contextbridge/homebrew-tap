@@ -4,12 +4,12 @@ cask "cli" do
 
   on_macos do
     on_intel do
-      sha256 "02cfb81f1e6e2b497ae46af4c91b50a3e39f01c938552850e9be638d6dcdfc85"
+      sha256 "7a17a5f61a0f007affcc683a91a228c6b1178bfa981a23858636b9723f0eb575"
       url "https://downloads.contextbridge.ai/cli/#{version}/contextbridge_#{version}_darwin_amd64.tar.gz",
         verified: "downloads.contextbridge.ai/cli/"
     end
     on_arm do
-      sha256 "2d22be33f640d28a5f984ca722cca86916dc7a547ed030fec5bf7a3c244286a1"
+      sha256 "d2567732d9976c8ef85f595e6e1ec5f0d1fde7dad768ed46c2d24fa820c1b3a1"
       url "https://downloads.contextbridge.ai/cli/#{version}/contextbridge_#{version}_darwin_arm64.tar.gz",
         verified: "downloads.contextbridge.ai/cli/"
     end
@@ -17,12 +17,12 @@ cask "cli" do
 
   on_linux do
     on_intel do
-      sha256 "6e61ccf374d46937b35ee42229ae1911c0d43afa4232a8dc1a7d30cc97b9ffb8"
+      sha256 "32692d3393e55d5adb0b63cc9f2e84317c6213758cdefdb6c713cce404090ddc"
       url "https://downloads.contextbridge.ai/cli/#{version}/contextbridge_#{version}_linux_amd64.tar.gz",
         verified: "downloads.contextbridge.ai/cli/"
     end
     on_arm do
-      sha256 "a3102fba6d1894f8ab93797bd39ac47deee5c89f0a50298ecb8c0358cdbde8cb"
+      sha256 "80f899d0867f933590d2909882fc7376d193f89d0113668ce0505f31b098fe3a"
       url "https://downloads.contextbridge.ai/cli/#{version}/contextbridge_#{version}_linux_arm64.tar.gz",
         verified: "downloads.contextbridge.ai/cli/"
     end
