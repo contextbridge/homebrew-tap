@@ -1,19 +1,19 @@
 class Aether < Formula
   desc "CLI and ACP server for the Aether AI coding agent"
   homepage "https://github.com/contextbridge/aether"
-  version "0.7.8"
+  version "0.7.9"
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/contextbridge/aether/releases/download/aether-agent-cli-v0.7.8/aether-agent-cli-aarch64-apple-darwin.tar.xz"
-    sha256 "e0de114193415eb1eb154fe2e3b385dea1aefa3297943ca9c93813af0c967509"
+    url "https://github.com/contextbridge/aether/releases/download/aether-agent-cli-v0.7.9/aether-agent-cli-aarch64-apple-darwin.tar.xz"
+    sha256 "742f3d65409201fab08974006699642ee03a36786f35e7116df464843a743bef"
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/contextbridge/aether/releases/download/aether-agent-cli-v0.7.8/aether-agent-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "e6e752398cd107700b25a8d3379e8d5cb92a7b5e8b84811244575079aeabb5cd"
+      url "https://github.com/contextbridge/aether/releases/download/aether-agent-cli-v0.7.9/aether-agent-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "bfe6ffcc9c4c97b75419e3ae79bb3b0a0016a93818b6921d0ec268664f72c803"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/contextbridge/aether/releases/download/aether-agent-cli-v0.7.8/aether-agent-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "f8019000d463964857b16c4cf8f9a3bdd5be55e01d297818fcd28f436852bab2"
+      url "https://github.com/contextbridge/aether/releases/download/aether-agent-cli-v0.7.9/aether-agent-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "54163be0eecdd6be597804512c76e27383b848f1a6182c1be4f3892dd2b57b9e"
     end
   end
   license "MIT"
