@@ -1,19 +1,19 @@
 class Aether < Formula
   desc "CLI and ACP server for the Aether AI coding agent"
   homepage "https://github.com/contextbridge/aether"
-  version "0.7.14"
+  version "0.7.15"
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/contextbridge/aether/releases/download/aether-agent-cli-v0.7.14/aether-agent-cli-aarch64-apple-darwin.tar.xz"
-    sha256 "4bbdce7b86ea4aa70270214fe71444102fa2f6900da47b5e3eb9c2ce19130174"
+    url "https://github.com/contextbridge/aether/releases/download/aether-agent-cli-v0.7.15/aether-agent-cli-aarch64-apple-darwin.tar.xz"
+    sha256 "0eeb65a7da8360c1358e0b2e83ce37ea9314ff34b0aa8363ba55e57a7c8d8fac"
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/contextbridge/aether/releases/download/aether-agent-cli-v0.7.14/aether-agent-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "1b77b359eb3c97160636507700eaac763dd6222acdee116249f6e88d3972486a"
+      url "https://github.com/contextbridge/aether/releases/download/aether-agent-cli-v0.7.15/aether-agent-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "2ccb8bbcd2bd1bd6fffc580ce194975a585b77406c12549405179519c4f9f7e0"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/contextbridge/aether/releases/download/aether-agent-cli-v0.7.14/aether-agent-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "7693a619db46600f0f1f6b14b48cb5d133a32357caef3dec464b31be633fc18f"
+      url "https://github.com/contextbridge/aether/releases/download/aether-agent-cli-v0.7.15/aether-agent-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "af1a99aec8a7a6e56f335265fb53179d83fbc09751b4cfb68132e52e1b0b532c"
     end
   end
   license "MIT"
@@ -40,9 +40,9 @@ class Aether < Formula
   end
 
   def install
-    bin.install "aether" if OS.mac? && Hardware::CPU.arm?
-    bin.install "aether" if OS.linux? && Hardware::CPU.arm?
-    bin.install "aether" if OS.linux? && Hardware::CPU.intel?
+    bin.install "aether", "aether-schemas" if OS.mac? && Hardware::CPU.arm?
+    bin.install "aether", "aether-schemas" if OS.linux? && Hardware::CPU.arm?
+    bin.install "aether", "aether-schemas" if OS.linux? && Hardware::CPU.intel?
 
     install_binary_aliases!
 
